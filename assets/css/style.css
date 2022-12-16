@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300;1,500&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
+  font-family: "Space Mono", monospace;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: "PT Serif", serif;
+}
+
+.who-box strong {
+  font-family: "Poppins", sans-serif;
+}
+
+.who-box p {
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  max-width: 20rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.profile-container:nth-child(3n + 2) {
+  margin-bottom: 0;
+  margin-top: 8rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+}
+
+.profile-container::after {
+  position: absolute;
+  color: black;
+  font-weight: 900;
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  right: -2rem;
+  top: 5rem;
+  rotate: 90deg;
+  text-transform: uppercase;
+}
+
+.profile-container:first-child::after {
+  content: "product owner";
+}
+
+.profile-container:last-child::after {
+  content: "developer";
+  top: 4rem;
+  right: -1rem;
+}
+
+.profile-container:nth-child(2)::after {
+  content: "art director";
+  top: 4.5rem;
+  right: -2rem;
+}
+
+.profile-container:nth-child(5)::after {
+  content: "developer";
+  top: 4rem;
+  right: -1rem;
+}
+
+.profile-container:nth-child(3)::after {
+  content: "tech lead";
+  top: 4rem;
+  right: -1rem;
+}
+
+.profile-container:nth-child(4)::after {
+  content: "ux designer";
+  top: 4.4rem;
+  right: -1.4rem;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.photo img {
+  width: 240px;
+  height: 360px;
+  object-fit: cover;
+}
+
+.name {
+  padding-top: 0.7rem;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-right: 3.5rem;
+}
+
+.footer h4 {
+  font-weight: lighter;
+}
+
+.footer span {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+@media screen and (width <= 720px) {
+  .section {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 85%;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .photo img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (725px <= width <= 1296px) {
+  .section {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 85%;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
